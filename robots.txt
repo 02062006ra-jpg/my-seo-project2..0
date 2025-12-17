@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /css/
+Disallow: /js/
+Disallow: /images/
+Allow: /
+
+Sitemap: https://02062006ra-jpg.github.io/my-seo-project/sitemap.xml

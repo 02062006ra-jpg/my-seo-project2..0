@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Заголовки безопасности -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; font-src 'self' https://cdnjs.cloudflare.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    
+    <!-- 4.1 Тег title для портфолио -->
+    <title>Портфолио | Примеры работ веб-разработчика Ольги в розовых тонах</title>
+    <!-- 4.2 Мета-тег description -->
+    <meta name="description" content="Портфолио выполненных проектов: корпоративные сайты, интернет-магазины, блоги в розовых тонах. Посмотрите примеры моих работ по веб-разработке.">
+    <meta name="keywords" content="портфолио веб-разработчика, примеры работ, выполненные проекты, кейсы, розовые сайты">
+    <meta name="author" content="Ольга">
+    
+    <!-- Оптимизированная загрузка CSS -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.onload=null;this.media='all'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+    
+    <!-- Font Awesome с оптимизацией -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.onload=null;this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Веб-разработчик Ольга</a>
+            </div>
+            <button class="burger" aria-label="Меню навигации" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О себе</a></li>
+                <li><a href="portfolio.html" class="active">Портфолио</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portfolio">
+            <!-- 4.3 Заголовок H1 на странице портфолио -->
+            <h1>Портфолио: Мои работы по веб-разработке</h1>
+            <p class="portfolio-intro">Здесь представлены некоторые из моих последних проектов.</p>
+            
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <!-- 4.4 Атрибут alt для изображения проекта с оптимизацией -->
+                        <picture>
+                            <source srcset="images/portfolio1.webp" type="image/webp">
+                            <img src="images/portfolio1.jpg" 
+                                 alt="Корпоративный сайт для компании - скриншот главной страницы"
+                                 width="500"
+                                 height="250"
+                                 loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="portfolio-info">
+                        <!-- Заголовок H2 для проекта -->
+                        <h2>Корпоративный сайт для Cosmetics Brand</h2>
+                        <!-- Заголовок H3 для описания -->
+                        <h3>Полностью адаптивный корпоративный сайт</h3>
+                        <p>Разработан современный сайт с системой управления контентом, палитрой в розовых тонах и адаптивным дизайном.</p>
+                        <a href="#" class="btn">Посмотреть проект</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <picture>
+                            <source srcset="images/portfolio2.webp" type="image/webp">
+                            <img src="images/portfolio2.jpg" 
+                                 alt="Интернет-магазин цветов с розовым дизайном - страница каталога товаров"
+                                 width="500"
+                                 height="250"
+                                 loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="portfolio-info">
+                        <h2>Интернет-магазин "Розовый цветок"</h2>
+                        <h3>Электронная коммерция с интеграцией платежей</h3>
+                        <p>Создан интернет-магазин с интеграцией платежной системы, каталогом товаров и системой отзывов.</p>
+                        <a href="#" class="btn">Посмотреть проект</a>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <picture>
+                            <source srcset="images/portfolio3.webp" type="image/webp">
+                            <img src="images/portfolio3.jpg" 
+                                 alt="Блог о веб-дизайне - страница статьи"
+                                 width="500"
+                                 height="250"
+                                 loading="lazy">
+                        </picture>
+                    </div>
+                    <div class="portfolio-info">
+                        <h2>Блог-платформа "Web Design Pink"</h2>
+                        <h3>Платформа для ведения блога с системой комментариев</h3>
+                        <p>Разработана платформа для ведения блога с системой комментариев, тегов и поиском.</p>
+                        <a href="#" class="btn">Посмотреть проект</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Веб-разработчик Ольга. Все права защищены.</p>
+        <div class="social-links">
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Критичный JavaScript для меню -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burger = document.querySelector('.burger');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (burger) {
+                burger.addEventListener('click', function() {
+                    const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+                    this.setAttribute('aria-expanded', !expanded);
+                    navLinks.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+    
+    <!-- Основной JavaScript загружается отложенно -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,564 @@
+/* Основные стили - оптимизированные */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: #fff5f7;
+    color: #222; /* Улучшенный контраст для доступности */
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Навигация с улучшенным контрастом */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: #ffeff6;
+    box-shadow: 0 2px 15px rgba(255, 105, 180, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo a {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e60073; /* Более темный оттенок для лучшего контраста */
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #a61e4d; /* Улучшенный контраст */
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #e60073;
+    background-color: rgba(255, 182, 193, 0.2);
+}
+
+.burger {
+    display: none;
+    font-size: 1.5rem;
+    color: #e60073;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* Герой-секция */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 5%;
+    background: linear-gradient(135deg, #ffe6f0 0%, #ffccdd 100%);
+    min-height: 80vh;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #a61e4d; /* Улучшенный контраст */
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #852747; /* Улучшенный контраст */
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e60073; /* Более темный для контраста */
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #c41262;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(230, 0, 115, 0.3);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    border: 8px solid #ffccdd;
+    box-shadow: 0 10px 30px rgba(166, 30, 77, 0.2);
+}
+
+/* Секция возможностей */
+.features {
+    padding: 5rem 5%;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    color: #a61e4d; /* Улучшенный контраст */
+    margin-bottom: 3rem;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 5px 20px rgba(255, 182, 193, 0.2);
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+}
+
+.feature i {
+    font-size: 3rem;
+    color: #e60073; /* Улучшенный контраст */
+    margin-bottom: 1.5rem;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: #a61e4d; /* Улучшенный контраст */
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    color: #852747; /* Улучшенный контраст */
+}
+
+/* Секция "О себе" */
+.about {
+    padding: 5rem 5%;
+}
+
+.about h1 {
+    font-size: 2.8rem;
+    color: #a61e4d; /* Улучшенный контраст */
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    border: 8px solid #ffccdd;
+    box-shadow: 0 10px 30px rgba(166, 30, 77, 0.2);
+}
+
+.about-text {
+    flex: 2;
+    min-width: 300px;
+}
+
+.about-text h2 {
+    font-size: 2.2rem;
+    color: #a61e4d; /* Улучшенный контраст */
+    margin-bottom: 1.5rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #852747; /* Улучшенный контраст */
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+    color: #a61e4d; /* Улучшенный контраст */
+    margin: 2rem 0 1.5rem;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill {
+    background-color: #ffeff6;
+    color: #e60073; /* Улучшенный контраст */
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 2px solid #ffccdd;
+}
+
+/* Стили для страницы портфолио */
+.portfolio {
+    padding: 5rem 5%;
+}
+
+.portfolio h1 {
+    font-size: 2.8rem;
+    color: #a61e4d; /* Улучшенный контраст */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.portfolio-intro {
+    text-align: center;
+    color: #852747; /* Улучшенный контраст */
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(255, 182, 193, 0.2);
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+}
+
+.portfolio-img {
+    flex: 1;
+    min-width: 300px;
+}
+
+.portfolio-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.portfolio-info {
+    flex: 1;
+    padding: 2rem;
+}
+
+.portfolio-info h2 {
+    font-size: 1.8rem;
+    color: #a61e4d; /* Улучшенный контраст */
+    margin-bottom: 1rem;
+}
+
+.portfolio-info p {
+    color: #852747; /* Улучшенный контраст */
+    margin-bottom: 1.5rem;
+}
+
+/* Стили для страницы контактов */
+.contacts {
+    padding: 5rem 5%;
+}
+
+.contacts h1 {
+    font-size: 2.8rem;
+    color: #a61e4d; /* Улучшенный контраст */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contacts-intro {
+    text-align: center;
+    color: #852747; /* Улучшенный контраст */
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+.contact-container {
+    display: flex;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(255, 182, 193, 0.2);
+}
+
+.contact-info h2, .contact-form h2 {
+    font-size: 2rem;
+    color: #a61e4d; /* Улучшенный контраст */
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #ffccdd;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: #e60073; /* Улучшенный контраст */
+    margin-right: 1.5rem;
+    width: 30px;
+}
+
+.contact-item h3 {
+    font-size: 1.2rem;
+    color: #a61e4d; /* Улучшенный контраст */
+    margin-bottom: 0.3rem;
+}
+
+.contact-item p {
+    color: #852747; /* Улучшенный контраст */
+}
+
+.contact-social h3 {
+    font-size: 1.5rem;
+    color: #a61e4d; /* Улучшенный контраст */
+    margin-bottom: 1.5rem;
+}
+
+.contact-social .social-links {
+    justify-content: flex-start;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: #a61e4d; /* Улучшенный контраст */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ffccdd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #e60073;
+}
+
+/* Футер */
+footer {
+    background-color: #ffeff6;
+    padding: 2rem 5%;
+    text-align: center;
+    margin-top: auto;
+    border-top: 1px solid #ffccdd;
+}
+
+footer p {
+    color: #a61e4d; /* Улучшенный контраст */
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #ffccdd;
+    color: #a61e4d; /* Улучшенный контраст */
+    border-radius: 50%;
+    font-size: 1.3rem;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #e60073;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Анимация появления элементов */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem 5%;
+    }
+    
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 3rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffeff6;
+        padding: 1rem 0;
+        box-shadow: 0 5px 15px rgba(255, 105, 180, 0.1);
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+    
+    .burger {
+        display: block;
+    }
+    
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-image img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .about-image img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .portfolio-item {
+        flex-direction: column;
+    }
+    
+    .portfolio-img {
+        min-width: 100%;
+    }
+    
+    .contact-container {
+        flex-direction: column;
+    }
+}
